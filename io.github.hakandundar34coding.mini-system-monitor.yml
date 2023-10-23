@@ -72,8 +72,8 @@ modules:
     buildsystem: meson
     sources:
       - type: archive
-        url: https://github.com/pygobject/pycairo/archive/v1.23.0/pycairo-v1.23.0.tar.gz
-        sha256: caf1bdbae0d6e091e0b39a652574cf4ad610655f09da81b8a2e68f6fd3fa3147
+        url: https://github.com/pygobject/pycairo/archive/v1.25.1/pycairo-v1.25.1.tar.gz
+        sha256: fabe2a6ae082e7970084ce61b29087f2211f098a099b0d6de68caac4be1263fb
         x-checker-data:
           type: anitya
           project-id: 13166
