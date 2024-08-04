@@ -1,0 +1,38 @@
+From 5e822d60e117d23d654b98c9b69e79fc4aa05de4 Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Mon, 5 Aug 2024 02:43:53 +0300
+Subject: [PATCH] Fix appdata papercuts
+
+---
+ io.github.hakandundar34coding.mini-system-monitor.appdata.xml | 10 ++++++++--
+ 1 file changed, 8 insertions(+), 2 deletions(-)
+
+diff --git a/io.github.hakandundar34coding.mini-system-monitor.appdata.xml b/io.github.hakandundar34coding.mini-system-monitor.appdata.xml
+index fdfc8e7..cabb38f 100644
+--- a/io.github.hakandundar34coding.mini-system-monitor.appdata.xml
++++ b/io.github.hakandundar34coding.mini-system-monitor.appdata.xml
+@@ -1,13 +1,19 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <!-- Copyright 2022 Hakan Dündar -->
+-<component>
+-  <id type="desktop">io.github.hakandundar34coding.mini-system-monitor.desktop</id>
++<component type="desktop-application">
++  <id>io.github.hakandundar34coding.mini-system-monitor</id>
+   <launchable type="desktop-id">io.github.hakandundar34coding.mini-system-monitor.desktop</launchable>
+   <metadata_license>CC0-1.0</metadata_license>
+   <name>Mini System Monitor</name>
+   <developer_name>Hakan Dündar</developer_name>
+   <project_license>GPL-3.0</project_license>
+   <summary>Monitoring CPU, RAM, Disk, Network usage</summary>
++  <provides>
++    <id>io.github.hakandundar34coding.mini-system-monitor.desktop</id>
++  </provides>
++  <replaces>
++    <id>io.github.hakandundar34coding.mini-system-monitor.desktop</id>
++  </replaces>
+   <url type="homepage">https://github.com/hakandundar34coding/mini-system-monitor</url>
+   <description>
+     <p>Mini version of 'System Monitoring Center'</p>
+--
+libgit2 1.7.2
+
