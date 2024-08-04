@@ -100,4 +100,5 @@ modules:
       - type: git
         url: https://github.com/hakandundar34coding/mini-system-monitor.git
         commit: cfeb7edcbb4d15b7230ae884f6dfadeb983deaae
-
+      - type: patch
+        path: fix-appdata.patch
